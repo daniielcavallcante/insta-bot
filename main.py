@@ -7,6 +7,9 @@ from selenium import webdriver
 from time import sleep
 import random
 
+user = #defina aqui seu username
+password = #defina aqui sua pw
+
 driver = webdriver.Chrome()
 driver.get("https://www.instagram.com/p/B_lBfLzHn0Q/")
 driver.maximize_window()
@@ -17,11 +20,11 @@ element.click()
 sleep(2)
 #Usuario
 element = driver.find_element_by_xpath("/html/body/div[1]/section/main/div/article/div/div[1]/div/form/div[2]/div/label/input")
-element.send_keys('daniielcavallcante')
+element.send_keys(user)
 sleep(1)
 #Senha
 element = driver.find_element_by_xpath("/html/body/div[1]/section/main/div/article/div/div[1]/div/form/div[3]/div/label/input")
-element.send_keys('guaraton1')
+element.send_keys(password)
 sleep(1)
 #Submeter
 element = driver.find_element_by_xpath("/html/body/div[1]/section/main/div/article/div/div[1]/div/form/div[4]/button")
